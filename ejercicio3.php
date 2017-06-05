@@ -5,7 +5,7 @@
 function getUsuarios(){
 	try {
 		//Conexion a la bd
-	    $mbd = new PDO('mysql:host=localhost;dbname=hoopla', 'root', '');
+	    $mbd = new PDO('mysql:host=d6vscs19jtah8iwb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=mlsgg77m0th44950', 'objeh2fgziv7j5nm', 'uyfg4uk86q9u00wj');
 	    //Consulta y recorrido de filas
 	    foreach($mbd->query('SELECT usuario.nombre, COALESCE(SUM(productos.precio),0) as precio 
 	    					FROM compras
